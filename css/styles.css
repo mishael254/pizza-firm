@@ -1,3 +1,57 @@
+.social {
+  text-align: center;
+}
+
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align:center;
+  text-decoration: none;
+  border-radius: 100%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-behance {
+  background:blue;
+  color: white
+}
+.fa-youtube {
+  background: maroon;
+  color: white
+}
+.fa-pinterest {
+  background: red;
+  color: white;
+}
+.fa-skype {
+  background: lightblue;
+  color: white;
+}
+.fa-flickr  {
+  background:red;
+  color:white;
+}
+.fa-stumbleupon {
+  background: orange;
+  color: white;
+}
+
+
+
+
+
+
 body  {
   background-image: url('img/download');
   background-repeat: no-repeat;
