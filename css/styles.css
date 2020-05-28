@@ -13,10 +13,31 @@
 
 
 
+.card-body  {
+  color: blue;
+  font-style: italic;
+}
 
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 1000px;
+    height: 140px;
+    padding: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+}
 
 .social {
   text-align: center;
+  padding: 100px
 }
 
 
