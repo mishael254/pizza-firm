@@ -22,9 +22,9 @@
     margin: 50px auto;
     position: relative;
     width: 1000px;
-    height: 140px;
+    height: 100px;
     padding: 400px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    box-shadow: 10 10 10px rgba(0,0,0,0.4);
 }
 
 #slideshow > div {
