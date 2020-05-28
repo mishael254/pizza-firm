@@ -1,6 +1,11 @@
 .backgroundOne  {
-  text-align: center;
+  text-align: left;
   color: brown;
+  background-image: url('img/backgroundOne.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 90px;
 }
 
 
