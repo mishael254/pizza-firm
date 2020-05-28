@@ -34,29 +34,40 @@ function WholePizzas(pizzaType,pizzaCrust,pizzaToppings) {
 
   // user interface logic
 $(document).ready(function() {
+  $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
   $("form#new-option").submit(function(event) {
     event.preventDefault();
 
     var inputtedfirstOption = $("input:radio[name=sizes]:checked").val();
-var inputtedsecondOption = $("input:radio[name=crust]:checked").val();
-var inputtedthirdOption = $("input:radio[name=toppings]:checked").val();
+    var inputtedsecondOption = $("input:radio[name=crust]:checked").val();
+    var inputtedthirdOption = $("input:radio[name=toppings]:checked").val();
 
 
      var newWholePizzas = new WholePizzas(inputtedfirstOption, inputtedsecondOption, inputtedthirdOption);
-    var newWholePizzas = new WholePizzas(inputtedfirstOption, inputtedsecondOption, inputtedthirdOption);
+     var newWholePizzas = new WholePizzas(inputtedfirstOption, inputtedsecondOption, inputtedthirdOption);
 
-    $("ul#cart-list").append("<li><span class='option'>" + newWholePizzas.firstOption + newWholePizzas.secondOption + newWholePizzas.thirdOption +  "</span> pizza</li>");
-
-
-    $("input:radio[name=sizes]:checked").val("");
-    $("input:radio[name=crust]:checked").val("");
-    $("input:radio[name=toppings]:checked").val("");
+     $("ul#cart-list").append("<li><span class='option'>" + newWholePizzas.firstOption + newWholePizzas.secondOption + newWholePizzas.thirdOption +  "</span> pizza</li>");
 
 
-        var firstOption = $("input#new-first-option").val();
-        var secondOption = $("input#new-second-option").val();
-        var thirdOption = $("input#new-third-option").val();
-        var result = output(firstOption,secondOption,thirdOption)
+     $("input:radio[name=sizes]:checked").val("");
+     $("input:radio[name=crust]:checked").val("");
+     $("input:radio[name=toppings]:checked").val("");
+
+
+     var firstOption = $("input#new-first-option").val();
+     var secondOption = $("input#new-second-option").val();
+     var thirdOption = $("input#new-third-option").val();
+     var result = output(firstOption,secondOption,thirdOption)
         alert(result)
 
 
